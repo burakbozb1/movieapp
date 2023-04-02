@@ -1,10 +1,10 @@
 # Movie App Example
 
 This project includes these examples:  
--Components  
--Binding  
--Models  
--Templates  
+- Components  
+- Binding  
+- Models  
+- Templates  
 
 
 
