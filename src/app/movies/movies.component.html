@@ -16,6 +16,7 @@
                 <div class="card-body">
                     <h2 class="card-title">{{item.title}}</h2>
                     <p class="card-text">{{item.description}}</p>
+                    <p class="card-text">{{item.datePublish | date: 'dd/MM/y'}}</p>
                     <button class="btn btn-sm btn-outline-primary">Details</button>
                 </div>
             </div>
@@ -67,3 +68,31 @@
         Film Bulunamadı.
     </div>
 </ng-template>
+
+<h4>lower-upper-title pipes</h4>
+<p>{{ 'TOLOVER' | lowercase }}</p>
+<p>{{ 'toupper' | uppercase }}</p>
+<p>{{ 'Title case' | titlecase }}</p>
+
+<h4>Date Pipes</h4>
+<p>{{ today }}</p>
+<p>{{ today | date }}</p>
+<p>{{ today | date: 'fullDate' }}</p>
+<p>{{ today | date: 'medium' }}</p>
+<p>{{ today | date: 'shortTime' }}</p>
+<p>{{ today | date: 'h:mm:ss' }}</p>
+
+<h4>Decimal Pipes</h4>
+<p>{{ 2.23456789789 | number}}</p>
+<p>{{ 2.23456789789 | number: '2.0-3'}}</p>
+<p>{{ 2.23456789789 | number: '4.1-7'}}</p>
+
+<h4>Currency Pipes</h4>
+<p>{{ 395 | currency}}</p>
+<p>{{ 395 | currency: 'EUR'}}</p>
+<p>{{ 395 | currency: 'TRY'}}</p>
+
+<h4>Percent Pipe</h4>
+<p>{{ 0.259 | percent }}</p>
+<p>{{ 1.26 | percent: '2.2-4' }}</p>
+<p>{{ 3/4 | percent: '2.2-4' }}</p>
