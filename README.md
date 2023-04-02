@@ -8,7 +8,7 @@ This project includes these examples:
 
 
 
-# Auto-Generated
+# Auto-Generated README
 
 ## Movieapp
 
